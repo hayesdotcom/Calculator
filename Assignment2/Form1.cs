@@ -17,6 +17,8 @@ namespace Assignment2
             InitializeComponent();
         }
         bool enter_value = false;
+        String operation = "";
+        Double result = 0;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -29,14 +31,14 @@ namespace Assignment2
             enter_value = false;
 
             Button num = (Button)sender;
-            if (num.Text == ".")
+            if (num.Text == ".") 
             {
                 if (!textBox1.Text.Contains("."))
                     textBox1.Text = textBox1.Text + num.Text;
             }
             else
                 textBox1.Text = textBox1.Text + num.Text;
-        }
+        } 
 
         private void clearButton(object sender, EventArgs e)
         {
@@ -59,7 +61,47 @@ namespace Assignment2
 
         private void Arithmetic_Button(object sender, EventArgs e)
         {
+            Button num = (Button)sender;
+            operation = num.Text;
+            result = Double.Parse(textBox1.Text);
+            textBox1.Text = "";
+            labeltxt.Text = System.Convert.ToString(result) + " " + operation;
+        }
 
+        private void button25_Click(object sender, EventArgs e)
+        {
+            labeltxt.Text = "";
+            switch(operation)
+            {
+                case "+":
+                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    break;
+                case "-":
+                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    break;
+                case "*":
+                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    break;
+                case "/":
+                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    break;
+            }
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           MessageBox.Show("This is a scientific calculator therefore STANDARD CALCULATOR is already in here. This is just for additional option HAHA. hank you!", "HUH?");
+        }
+
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 360;
+            textBox1.Width = 316;
         }
     }
 }

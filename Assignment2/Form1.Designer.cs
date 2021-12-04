@@ -392,6 +392,7 @@ namespace Assignment2
             this.button25.TabIndex = 25;
             this.button25.Text = "=";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -534,6 +535,7 @@ namespace Assignment2
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.editToolStripMenuItem.Text = "Exit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -560,20 +562,21 @@ namespace Assignment2
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
             this.standardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardToolStripMenuItem.Text = "Standard";
+            this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
             this.scientificToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.scientificToolStripMenuItem.Text = "Scientific";
+            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // labeltxt
             // 
-            this.labeltxt.AutoSize = true;
             this.labeltxt.BackColor = System.Drawing.Color.White;
-            this.labeltxt.Location = new System.Drawing.Point(306, 54);
+            this.labeltxt.Location = new System.Drawing.Point(17, 50);
             this.labeltxt.Name = "labeltxt";
-            this.labeltxt.Size = new System.Drawing.Size(13, 13);
+            this.labeltxt.Size = new System.Drawing.Size(100, 23);
             this.labeltxt.TabIndex = 38;
             this.labeltxt.Text = "  ";
             // 
