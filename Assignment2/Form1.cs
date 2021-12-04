@@ -171,5 +171,26 @@ namespace Assignment2
             result = Math.Exp(result);
             textBox1.Text = result.ToString(); //Note: click the number to find the exp of first.
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Pow(result, 2);
+            textBox1.Text = result.ToString(); 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Pow(result, 3);
+            textBox1.Text = result.ToString();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = 1/result;
+            textBox1.Text = result.ToString();
+        }
     }
 }

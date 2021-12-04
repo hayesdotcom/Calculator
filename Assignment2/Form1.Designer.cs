@@ -154,6 +154,7 @@ namespace Assignment2
             this.button7.TabIndex = 7;
             this.button7.Text = "x^2";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button9
             // 
@@ -167,6 +168,7 @@ namespace Assignment2
             this.button9.TabIndex = 8;
             this.button9.Text = "x^3";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -180,6 +182,7 @@ namespace Assignment2
             this.button8.TabIndex = 9;
             this.button8.Text = "1/x";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button10
             // 
