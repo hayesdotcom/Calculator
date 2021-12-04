@@ -124,5 +124,52 @@ namespace Assignment2
             result = Math.Sqrt(result);
             textBox1.Text = result.ToString();
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = result * -1;
+            textBox1.Text = result.ToString();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Log(result);
+            textBox1.Text = result.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Sin(result);
+            textBox1.Text = result.ToString(); //Note: click the number to find the sin of first.
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Cos(result);
+            textBox1.Text = result.ToString(); //Note: click the number to find the cos of first.
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Tan(result);
+            textBox1.Text = result.ToString(); //Note: click the number to find the tan of first.
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = Math.Exp(result);
+            textBox1.Text = result.ToString(); //Note: click the number to find the exp of first.
+        }
     }
 }

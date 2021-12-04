@@ -84,6 +84,7 @@ namespace Assignment2
             this.button1.TabIndex = 1;
             this.button1.Text = "OFF";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -97,6 +98,7 @@ namespace Assignment2
             this.button2.TabIndex = 2;
             this.button2.Text = "Sin";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -110,6 +112,7 @@ namespace Assignment2
             this.button3.TabIndex = 3;
             this.button3.Text = "Cos";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -123,6 +126,7 @@ namespace Assignment2
             this.button4.TabIndex = 4;
             this.button4.Text = "Tan";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -136,6 +140,7 @@ namespace Assignment2
             this.button5.TabIndex = 5;
             this.button5.Text = "EXP";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -216,6 +221,7 @@ namespace Assignment2
             this.button12.TabIndex = 12;
             this.button12.Text = "Ln X";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -340,6 +346,7 @@ namespace Assignment2
             this.button21.TabIndex = 21;
             this.button21.Text = "+/-";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
