@@ -120,7 +120,9 @@ namespace Assignment2
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
+            result = double.Parse(textBox1.Text);
+            result = Math.Sqrt(result);
+            textBox1.Text = result.ToString();
         }
     }
 }
