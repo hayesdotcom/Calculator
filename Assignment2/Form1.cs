@@ -19,6 +19,7 @@ namespace Assignment2
         bool enter_value = false;
         String operation = "";
         Double result = 0;
+        Double result1 = 0;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -77,13 +78,13 @@ namespace Assignment2
                     textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "-":
-                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result - Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "*":
-                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result * Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "/":
-                    textBox1.Text = (result + Double.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result / Double.Parse(textBox1.Text)).ToString();
                     break;
             }
         }
@@ -102,6 +103,24 @@ namespace Assignment2
         {
             this.Width = 360;
             textBox1.Width = 316;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            result1 = Math.PI;
+            textBox1.Text = result1.ToString();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result1 = Math.Log10(result);
+            textBox1.Text = result1.ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
