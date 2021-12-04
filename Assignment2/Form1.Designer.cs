@@ -238,6 +238,7 @@ namespace Assignment2
             this.button13.TabIndex = 13;
             this.button13.Text = "%";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -251,6 +252,7 @@ namespace Assignment2
             this.button14.TabIndex = 14;
             this.button14.Text = "MOD";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 

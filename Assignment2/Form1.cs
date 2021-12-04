@@ -192,5 +192,19 @@ namespace Assignment2
             result = 1/result;
             textBox1.Text = result.ToString();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = result/100;
+            textBox1.Text = result.ToString();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(textBox1.Text);
+            result = (result1 % double.Parse(textBox1.Text));
+            textBox1.Text = result.ToString();
+        }
     }
 }
